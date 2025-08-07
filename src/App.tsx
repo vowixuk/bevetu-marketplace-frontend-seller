@@ -2,6 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+import { RouterProvider } from "react-router-dom";
+import router from "./Routes";
+import "semantic-ui-css/semantic.min.css";
+import { AuthProvider } from "./context";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { ToastContainer } from "react-toastify";
+import "./App.scss";
+
 function App() {
   return (
     <div className="App">
