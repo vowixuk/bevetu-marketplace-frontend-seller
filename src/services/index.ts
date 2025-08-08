@@ -1,14 +1,12 @@
 
 import { todoReturn } from "./api/fixtures/modules/main.fixtures";
 import { IServices } from "./api/interfaces/api-service.interface";
-import { aiServices } from "./api/modeules/ai.services";
 import { mainServices } from "./api/modeules/main.services";
 
 
 export const services: IServices = {
   /* ------ Bevetu Services -------- */
   api: {
-    ai: aiServices,
     main: mainServices,
     marketplace: todoReturn,
     social:todoReturn,

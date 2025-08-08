@@ -71,3 +71,66 @@ Message Modules
 Review Modules
 
 
+
+
+
+src/
+│
+├── app/                   # App-wide setup
+│   ├── App.tsx
+│   ├── index.tsx
+│   ├── routes.tsx         # Central route definitions
+│   ├── queryClient.ts     # React Query Client setup
+│   └── store/             # Global state (if needed, e.g. Zustand/Redux)
+│
+├── modules/               # Feature-based modules
+│   ├── auth/
+│   │   ├── components/    # Auth-specific UI
+│   │   ├── hooks/         # Auth-related hooks
+│   │   │   ├── useLogin.ts
+│   │   │   └── useLogout.ts
+│   │   ├── queries/       # React Query hooks
+│   │   │   ├── useUser.ts     # GET current user
+│   │   │   └── useAuthStatus.ts
+│   │   ├── services/      # Axios/Fetch API calls
+│   │   │   └── authService.ts
+│   │   ├── pages/         # Page components
+│   │   │   ├── LoginPage.tsx
+│   │   │   └── SignupPage.tsx
+│   │   ├── types.ts
+│   │   └── index.ts
+│   │
+│   ├── products/
+│   │   ├── components/
+│   │   ├── queries/
+│   │   │   ├── useProducts.ts   # GET list of products
+│   │   │   └── useProduct.ts    # GET single product
+│   │   ├── services/
+│   │   │   └── productService.ts
+│   │   ├── pages/
+│   │   ├── types.ts
+│   │   └── index.ts
+│
+├── components/            # Reusable UI across features
+│   ├── Button/
+│   ├── Modal/
+│   └── Navbar/
+│
+├── hooks/                 # Global hooks (not feature-specific)
+│   └── useDebounce.ts
+│
+├── services/              # Global API service configs
+│   ├── axiosInstance.ts
+│   └── storage.ts
+│
+├── utils/                 # Helper functions
+│   └── formatDate.ts
+│
+├── types/                 # Global TypeScript types
+│   └── index.ts
+│
+├── assets/                # Images, fonts, etc.
+│
+└── styles/                # Global CSS/theme
+    ├── global.css
+    └── variables.css

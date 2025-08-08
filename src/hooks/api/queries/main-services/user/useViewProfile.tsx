@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
-import { IAuthContext, useAuthContext } from "context/AuthContext";
-import { QUERY_KEYS } from "hooks/api/queryKeys";
-import { services } from "services/index";
+import { IAuthContext, useAuthContext } from "../../../../../providers/auth";
+import { QUERY_KEYS } from "../../../../../hooks/api/queryKeys";
+import { services } from "../../../../../services/index";
 
 
 

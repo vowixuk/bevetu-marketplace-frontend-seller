@@ -1,0 +1,1 @@
+# This layout folder contains layout components used globally across the entire application, not specific to any particular region.
