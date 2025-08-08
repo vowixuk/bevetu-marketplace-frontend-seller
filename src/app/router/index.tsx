@@ -1,10 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
-import MainLayout from "../components/layout/MainLayout";
-import { dashboardRoutes, Dashboard } from "../modules/dashboard";
-import { productRoutes } from "../modules/product";
-import { orderRoutes } from "../modules/order/router";
-import { settingsRoutes } from "../modules/setting";
-import { shopSetupRoutes } from "../modules/shopSetup";
+import MainLayout from "../views/MainLayout";
+import { dashboardRoutes, Dashboard } from "../../modules/dashboard";
+import { productRoutes } from "../../modules/product";
+import { orderRoutes } from "../../modules/order/router";
+import { settingsRoutes } from "../../modules/setting";
+import { shopSetupRoutes } from "../../modules/shopSetup";
+import { NotFoundPage } from "../views/NotFoundPage";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
         path: "",
         element: <Dashboard />,
         index: true,
+      },
+      {
+        path: "404",
+        element: <NotFoundPage />,
       },
       {
         path: "dashboard",

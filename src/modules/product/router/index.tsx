@@ -6,3 +6,17 @@ export const productRoutes = [
   { path: "create", element: <CreateProduct /> },
 ];
 
+
+/**
+ *  If nested structure 
+ */
+// export const productRoutes = [
+//   {
+//     element: <ProductsLayout />, // Nested layout
+//     children: [
+//       { path: "", element: <ViewAllProducts />, index: true },
+//       { path: "create", element: <CreateProduct /> },
+//       { path: "edit", element: <EditProduct /> },
+//     ],
+//   },
+// ];

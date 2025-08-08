@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { IUser } from "../../../../../providers";
 import { QUERY_KEYS } from "../../../queryKeys";
-import { services } from "../../../../../services/index";
+import { services } from "../../../../../../services/index";
 
 export interface IUseCheckSession {
   setCsrfToken: React.Dispatch<React.SetStateAction<string | null>>;

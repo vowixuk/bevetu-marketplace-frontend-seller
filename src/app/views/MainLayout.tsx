@@ -1,4 +1,5 @@
 import { Outlet } from "react-router-dom";
+import { Nav } from "./Nav";
 
 interface MainLayoutProps {}
 
@@ -12,11 +13,7 @@ const MainLayout: React.FunctionComponent<MainLayoutProps> = () => {
     <div className="wrapper">
       <div className="content">
         <div className="nav">
-          <ul>
-            <li>item 1</li>
-            <li>item 2</li>
-            <li>item 3</li>
-          </ul>
+          <Nav />
         </div>
         <div className="outlet">
           <Outlet />
